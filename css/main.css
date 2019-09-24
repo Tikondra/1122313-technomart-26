@@ -219,15 +219,57 @@ a {
 
 .page-header__mid {
   display: flex;
-  justify-content: flex-end;  
+  align-items: flex-start;
   margin-top: 40px;
   color: #ee3643;
+}
+
+.page-header__title {
+  margin-top: 9px;
+  margin-left: 52px;
+  margin-right: 72px;
+  width: 196px;    
+  font-size: 16px;
+  font-style: italic;
+  line-height: 23px;
+}
+
+.page-header__text {
+  margin: 0;
+  margin-top: 18px;
+  width: 280px;    
+}
+
+.page-header__tel {
+  padding: 6px;
+  padding-bottom: 8px;
+  padding-left: 71px;
+  padding-right: 50px;
+  color: #ee3643;
+  font-size: 21px;
+  line-height: 21px;
+  border: 3px solid #ffffff;
+  background-image: url(../img/icon-phone.svg);
+  background-repeat: no-repeat;
+  background-position: 13px center;
+  text-decoration: none;
+}
+
+.page-header__adress {
+  display: block;
+  margin-top: 16px;
+  padding-left: 10px;
+  color: #32425c;
+  font-size: 14px;  
+  line-height: 24px;
+  letter-spacing: 0.1px;
 }
 
 .auth {
   display: flex;
   margin: 0;
-  margin-left: 69px;
+  margin-top: 5px;
+  margin-left: auto;  
   padding: 0;
   list-style: none;
 }
@@ -238,7 +280,7 @@ a {
 
 .auth__link {
   display: block;
-  padding: 14px 25px 11px;
+  padding: 13px 25px 11px;
   font-size: 21px;  
   line-height: 21px;
   color: #000;
@@ -247,49 +289,25 @@ a {
 }
 
 .auth__link_enter {
-  display: flex;  
+  padding-left: 15px;  
 }
 
-.auth__span {
-  margin-left: 14px;
+.auth__svg {
+  margin-right: 9px;
 }
 
-.page-header__title {
-  margin-top: 8px;
-  margin-left: 53px;
-  margin-right: auto;
-  width: 196px;    
-  font-size: 16px;
-  font-style: italic;
-  line-height: 23px;
-}
-
-.page-header__text {
-  display: flex;
-  flex-direction: column;
-  width: 270px;
-  margin: 0;
-  color: #32425c;  
-  font-size: 14px;  
-  line-height: 24px;
-}
-
-.page-header__tel {
-  padding: 13px 20px;
-  padding-left: 50px;
+.auth__link:hover {
   color: #ee3643;
-  font-size: 21px;
-  line-height: 21px;
-  border: 3px solid #ffffff;
-  background-image: url(../img/icon-phone.svg);
-  background-repeat: no-repeat;
-  background-position: 15px center;
 }
 
+.auth__item:hover .auth__svg path{
+  fill: #32425c;
+}
 
-
-
-
+.auth__link:active {
+  color: #000;
+  opacity: 0.3;
+}
 
 
 
