@@ -361,10 +361,8 @@ a {
   color: #fff;
   font-size: 24px;
   font-weight: 700;
-  line-height: 30px;
-  background-image: url(../img/icon-1.svg);
-  background-repeat: no-repeat;
-  background-position: 213px 31px;
+  line-height: 30px;  
+  background-repeat: no-repeat;  
 }
 
 .promo-block__link {
@@ -393,6 +391,13 @@ a {
   margin: 0;
 }
 
+.promo-block_mat {
+  background-image: url(../img/icon-1.svg),
+                    url(../img/new_flag.svg);
+  background-position: 213px 31px,
+                       right top;                  
+}
+
 .promo-block_tools {
   background-color: #3bbce3;
   background-image: url(../img/icon-2.svg);
@@ -401,6 +406,7 @@ a {
 
 .promo-block_tech {
   margin-right: 0;
+  margin-bottom: 21px;
   background-color: #dc91d8;
   background-image: url(../img/icon-3.svg);
   background-position: 191px 31px;
@@ -409,6 +415,7 @@ a {
 .promo-block_sale {
   margin-left: 640px;
   margin-right: 0;
+  margin-bottom: 21px;
   background-color: #8ed78f;
   background-image: url(../img/icon-4.svg);
   background-position: 196px 27px;
@@ -423,6 +430,135 @@ a {
 }
 
 /*==========  SLIDER  ==========*/
+
+.slider {
+  position: relative;
+  margin-top: -285px;  
+}
+
+.slider__list {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  list-style: none;  
+}
+
+.slider__item {
+  position: relative;
+  display: none;
+  width: 620px;
+  min-height: 266px;
+  padding: 23px 20px 22px 24px;  
+  background-image: url(../img/drel.jpg);
+}
+
+.slide1 {
+  display: block;
+}
+
+.slide2 {
+  display: none;
+  background-image: url(../img/perf.jpg);  
+}
+
+.slide__title {
+  margin: 0;
+  margin-bottom: 2px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;  
+}
+
+.slide__text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.slide__link {
+  position: absolute;
+  bottom: 22px;
+  left: 25px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 195px;
+  padding: 10px;
+  text-align: center;
+  background-color: #ee3643;
+  text-decoration: none;
+  font-size: 14px;  
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.slide__link:hover {
+  background-color: #ca2c37;
+}
+
+.slide__link:active {
+  background-color: #ba2732;
+}
+
+/*==========  SLIDER-CONTROL  ==========*/
+
+.slider__input {
+  display: none;
+}
+
+.arrow_left,
+.arrow_right {
+  position: absolute;
+  top: 114px;
+  left: 25px;
+  z-index: 1;
+  display: block;
+  width: 22px;
+  height: 40px;
+  background-image: url(../img/icon-left.svg);
+  cursor: pointer;
+}
+
+.arrow_right {  
+  left: 578px;   
+  background-image: url(../img/icon-right.svg);
+}
+
+.circle_left,
+.circle_right {
+  position: absolute;
+  top: 220px;
+  left: 295px;
+  z-index: 1;
+  display: block;
+  width: 10px;
+  height: 10px;  
+
+  border: 2px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.circle_right {
+  top: 220px;
+  left: 315px;
+}
+
+#slide1:checked ~ .circle[for="slide1"],
+#slide2:checked ~ .circle[for="slide2"] {
+  background-color: #ee3643;
+}
+
+#slide2:checked ~ .slider__list .slide1 {
+  display: none;
+}
+
+#slide2:checked ~ .slider__list .slide2 {
+  display: block;
+}
+
+/*==========  popular-goods  ==========*/
 
 main {
   color: #000;
