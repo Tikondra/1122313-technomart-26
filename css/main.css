@@ -847,3 +847,162 @@ a {
   opacity: 0.3;
   box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
 }
+
+.service {
+  margin-top: 65px;
+  background-color: #f5f8fa;
+  color: #000;
+  border: 1px solid transparent;
+}
+
+.service__cont {
+  margin-top: 64px;
+}
+
+.service__title {
+  margin: 0;  
+
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.service__text {
+  width: 420px;
+  margin-top: 25px;
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+}
+
+.service__slider {
+  display: flex;
+  margin-top: 71px;
+  margin-bottom: 99px;
+}
+
+.service-menu {
+  margin: 0;
+  padding: 0;
+  margin-right: 80px;
+  list-style: none;
+}
+
+.serice__input {
+  display: none;
+}
+
+.service-menu__btn {
+  display: block;
+  width: 240px;
+  padding: 15px 22px 16px;
+  text-align: left;
+  color: #fff;
+  font-family: Cuprum;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 30px;
+  box-shadow: 0 1px 0 #293449, inset 0 1px 0 #405069;
+  background-color: #32425c;
+  border: none;
+}
+
+.service-menu__btn:hover {
+  background-color: #293449;
+}
+
+.garant,
+.credit {
+  display: none;
+}
+
+#service__slide1:checked ~ .service-menu .service-menu__btn[for="service__slide1"],
+#service__slide2:checked ~ .service-menu .service-menu__btn[for="service__slide2"],
+#service__slide3:checked ~ .service-menu .service-menu__btn[for="service__slide3"] {
+  color: #32425c;
+  background-color: #fff;
+  box-shadow: 0 1px 0 #ffffff, inset 0 1px 0 #ffffff;
+}
+
+#service__slide2:checked ~ .delivery,
+#service__slide3:checked ~ .delivery {
+  display: none;
+}
+
+#service__slide2:checked ~ .garant {
+  display: block;
+}
+
+#service__slide3:checked ~ .credit {
+  display: block;
+}
+
+.service__slide_title {
+  margin: 0;
+  margin-top: -3px;
+  color: #32425c;
+  font-family: Cuprum;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.service__slide_text {
+  margin-top: 25px;
+  width: 280px;
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+.service__slide {
+  flex-grow: 1;  
+  background-repeat: no-repeat;
+}
+
+.delivery {
+  background-image: url(../img/delivery.png);
+  background-position: 150px 22px;  
+}
+
+.garant {
+  background-image: url(../img/garant.png);
+  background-position: right top;
+}
+
+.garant .service__slide_text {
+  width: 380px;
+  margin-bottom: 0;
+}
+
+.credit {
+  background-image: url(../img/credit.png);
+  background-position: right top;
+}
+
+.credit .service__slide_text {
+  width: 285px;
+}
+
+.credit__link {
+  display: inline-block;
+  width: 195px;
+  vertical-align: bottom;
+  padding: 10px 0;
+  margin-top: 15px;
+  text-align: center;
+  font-family: Cuprum;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #ff5357;
+}

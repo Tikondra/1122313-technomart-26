@@ -310,49 +310,61 @@
 			</div>
 
 			<section class="service">
-				<h2 class="hidd-title">Сервисы</h2>
-				<p class="service__text">
-					Хороший интернет-магазин отличается от плохого не только ценами!
-					Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-				</p>
-
-				<ul class="service-menu">
-					<li class="service-menu__item">
-						<a class="service-menu__link" href="#">Доставка</a>
-					</li>
-					<li class="service-menu__item">
-						<a class="service-menu__link" href="#">Гарантия</a>
-					</li>
-					<li class="service-menu__item">
-						<a class="service-menu__link" href="#">Кредит</a>
-					</li>
-				</ul>
-
-				<section class="delivery">
-					<h3 class="delivery__title">Доставка</h3>
-					<p class="delivery__text">
-						Мы с удовольствием доставим ваш товар прямо 
-						к вашему подъезду совершенно бесплатно!
-						Ведь мы неплохо заработаем, 
-						поднимая его на ваш этаж!
+				<div class="service__cont container">
+					<h2 class="service__title">Сервисы</h2>
+					<p class="service__text">
+						Хороший интернет-магазин отличается от плохого не только ценами!
+						Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
 					</p>
-				</section>
-				<section class="garant">
-					<h3 class="garant__title">Гарантия</h3>
-					<p class="garant__text">
-						Если купленный у нас товар поломается или заискрит, 
-						а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. 
-						Дом уж восстановите как-нибудь сами.
-					</p>
-				</section>
-				<section class="credit">
-					<h3 class="credit__title">Кредит</h3>
-					<p class="credit__text">
-						Залезть в долговую яму стало проще! 
-						Кредитные консультанты придут вам на помощь.
-					</p>
-					<a class="credit__link" href="#">Отправить заявку</a>
-				</section>
+					<div class="service__slider">
+						<input class="serice__input" type="radio" name="service__slide" id="service__slide1" checked>
+						<input class="serice__input" type="radio" name="service__slide" id="service__slide2">
+						<input class="serice__input" type="radio" name="service__slide" id="service__slide3">
+						<ul class="service-menu">
+							<li class="service-menu__item">								
+								<label class="service-menu__btn" for="service__slide1">
+									Доставка
+								</label>																
+							</li>
+							<li class="service-menu__item">								
+								<label class="service-menu__btn" for="service__slide2">
+									Гарантия
+								</label>																
+							</li>
+							<li class="service-menu__item">							
+								<label class="service-menu__btn" for="service__slide3">
+									Кредит
+								</label>															
+							</li>
+						</ul>
+						
+						<section class="service__slide delivery">
+							<h3 class="service__slide_title">Доставка</h3>
+							<p class="service__slide_text">
+								Мы с удовольствием доставим ваш товар прямо<br>
+								к вашему подъезду совершенно бесплатно!
+								Ведь мы неплохо заработаем,<br>
+								поднимая его на ваш этаж!
+							</p>
+						</section>
+						<section class="service__slide garant">
+							<h3 class="service__slide_title">Гарантия</h3>
+							<p class="service__slide_text">
+								Если купленный у нас товар поломается или заискрит,<br> 
+								а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
+								Дом уж восстановите как-нибудь сами.
+							</p>
+						</section>
+						<section class="service__slide credit">
+							<h3 class="service__slide_title">Кредит</h3>
+							<p class="service__slide_text">
+								Залезть в долговую яму стало проще!<br>
+								Кредитные консультанты придут вам на помощь.
+							</p>
+							<a class="credit__link" href="#">Отправить заявку</a>
+						</section>
+					</div>
+				</div>
 			</section>
 
 			<section class="info">
