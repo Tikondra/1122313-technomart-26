@@ -563,16 +563,18 @@ a {
 
 /*==========  popular-goods  ==========*/
 
-.popular-goods__container {
+.popular-goods__container,
+.popular-manufacturers__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 53px;
-  padding: 24px 24px 24px 28px;  
+  padding: 26px 24px 24px 28px;  
   background-color: #f9f5f0;  
 }
 
-.popular-goods__title {
+.popular-goods__title,
+.popular-manufacturers__title {
   margin: 0;
   color: #32425c;  
   font-size: 30px;  
@@ -581,9 +583,11 @@ a {
   text-transform: uppercase;  
 }
 
-.popular-goods__link {
+.popular-goods__link,
+.popular-manufacturers__link {
   width: 253px;  
-  padding: 11px;
+  padding: 10px;
+  padding-bottom: 9px;
   text-align: center;
   font-size: 14px;
   line-height: 18px;
@@ -591,11 +595,13 @@ a {
   background-color: #ee3643;
 }
 
-.popular-goods__link:hover {
+.popular-goods__link:hover,
+.popular-manufacturers__link:hover {
   background-color: #ca2c37;
 }
 
-.popular-goods__link:active {
+.popular-goods__link:active,
+.popular-manufacturers__link:active {
   background-color: #ba2732;
 }
 
@@ -612,6 +618,7 @@ a {
 .good {
   position: relative;
   display: inline-block;
+  vertical-align: top;
 
   width: 220px;
   margin-right: 20px;
@@ -791,4 +798,52 @@ a {
 .good__btn_bookmark:active {
   border: 3px solid #32425c;
   opacity: 0.3;
+}
+
+/*==========  popular-manufacturers  ==========*/
+
+.popular-manufacturers__container {
+  margin-top: 2px;
+  margin-bottom: 22px;
+}
+
+.popular-manufacturers__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.manufacturer__item {
+  position: relative; 
+
+  width: 220px;
+  
+  margin-right: 20px;
+  margin-bottom: 20px;
+  
+  border: 1px solid #eaeaea;
+}
+
+.manufacturer__item:nth-child(4n+4) {
+  margin-right: 0;
+}
+
+.manufacturer__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  min-height: 143px;
+}
+
+.manufacturer__link:hover {
+  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+}
+
+.manufacturer__link:active {
+  opacity: 0.3;
+  box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
 }
