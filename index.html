@@ -159,7 +159,7 @@
 					</ul>
 
 					<div class="slider">						
-							<input class="slider__input" type="radio" name="slide" id="slide1">
+							<input class="slider__input" type="radio" name="slide" id="slide1" checked>
 							<input class="slider__input" type="radio" name="slide" id="slide2">
 
 							<label class="arrow_left" for="slide1"></label>
@@ -185,7 +185,7 @@
 
 				<section class="popular-goods">
 					<div class="popular-goods__container">
-						<h2 class="hidd-title">Популярные товары:</h2>
+						<h2 class="popular-goods__title">Популярные товары:</h2>
 						<a class="popular-goods__link" href="#">Все популярные товары</a>
 					</div>			
 
@@ -196,9 +196,13 @@
 								<h3 class="good__title">Перфоратор BOSCH BFG 9000</h3>
 							</a>
 							<p class="good__price">
-								<span>32500 P</span><br>
-								25500 P
+								<span class="good__oldprice">32500 P</span>
+								<span class="good__newprice">25500 P</span>
 							</p>
+							<div class="good__btns">
+								<a href="#" class="good__btn good__btn_buy">Купить</a>
+								<a href="#" class="good__btn good__btn_bookmark">В закладки</a>
+							</div>
 						</li>
 
 						<li class="good">
@@ -207,9 +211,13 @@
 								<h3 class="good__title">Перфоратор BOSCH BFG 3000</h3>
 							</a>
 							<p class="good__price">
-								<span>22500 P</span><br>
-								15500 P
+								<span class="good__oldprice">22500 P</span>
+								<span class="good__newprice">15500 P</span>
 							</p>
+							<div class="good__btns">
+								<a href="#" class="good__btn good__btn_buy">Купить</a>
+								<a href="#" class="good__btn good__btn_bookmark">В закладки</a>
+							</div>
 						</li>
 
 						<li class="good">
@@ -218,19 +226,27 @@
 								<h3 class="good__title">Перфоратор BOSCH BFG 6000</h3>
 							</a>
 							<p class="good__price">
-								<span>30500 P</span><br>
-								25500 P
+								<span class="good__oldprice">30500 P</span>
+								<span class="good__newprice">25500 P</span>
 							</p>
+							<div class="good__btns">
+								<a href="#" class="good__btn good__btn_buy">Купить</a>
+								<a href="#" class="good__btn good__btn_bookmark">В закладки</a>
+							</div>
 						</li>
 
-						<li class="good">
+						<li class="good new">
 							<a class="good__link" href="#">
 								<img class="good__img" src="img/good4.png" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
 								<h3 class="good__title">Перфоратор BOSCH BFG 2000</h3>
 							</a>
 							<p class="good__price">
-								12500 P
+								<span class="good__newprice">12500 P</span>
 							</p>
+							<div class="good__btns">
+								<a href="#" class="good__btn good__btn_buy">Купить</a>
+								<a href="#" class="good__btn good__btn_bookmark">В закладки</a>
+							</div>
 						</li>				
 					</ul>
 				</section>
