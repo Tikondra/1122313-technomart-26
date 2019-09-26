@@ -1286,3 +1286,73 @@ a {
 .footer-info__link {
   color: #ffd180;
 }
+
+.user-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; 
+  width: 300px;
+  margin: 0;
+  margin-left: auto;
+  margin-top: 6px;
+  padding: 0;
+  list-style: none;
+}
+
+.user-nav__user {
+  display: block;
+  width: 255px;
+  padding: 11px 0 13px 13px;
+  color: #000000;
+  font-family: Cuprum;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 21px;  
+  background-color: #fff;
+  text-decoration: none;
+}
+
+.user-nav__user_span {
+  padding-left: 10px;
+  letter-spacing: 0.2px;
+}
+
+.user-nav__exit {
+  margin-top: 6px;
+  padding: 14px 11px 11px 13px;
+  background-color: #fff;
+}
+
+.user-nav__exit:hover path,
+.user-nav__user:hover path {
+  fill: #32425c;
+}
+
+.user-nav__exit:active,
+.user-nav__user:active{
+  opacity: 0.3;
+}
+
+.user-nav__link {
+  display: inline-block;
+  vertical-align: top;
+  padding: 5px 16px 5px 18px;
+  margin-top: 1px;
+
+  color: #32425c;
+  font-family: Cuprum;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration: underline;
+}
+
+.user-nav__link_2 {  
+  background-image: url(../img/Shape.svg);
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+.user-nav__link:hover {
+  color: #ee3643;  
+}
