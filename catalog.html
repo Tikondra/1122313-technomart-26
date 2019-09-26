@@ -153,43 +153,90 @@
 						</li>
 					</ul>        
 				</nav>
+				<div class="page-content__box">
+					<h1 class="page-content__title">Перфораторы</h1>
+					
+					<section class="filters">
+						<h2 class="filters__main-title">Фильтр</h2>
 
-				<h1 class="page-content__title">Перфораторы</h1>
-				
-				<section class="filters">
-					<h2 class="hidd-title">Фильтр</h2>
+						<form class="filters__form" action="#" method="post">
+							<h3 class="filters__title">Цена</h3>
+								<div class="sort-price__range">
+		              <button class="sort-price__btn sort-price__btn1" type="button"></button>
+		              <button class="sort-price__btn sort-price__btn2" type="button"></button>
+		            </div>
+		            <div class="sort-price__inputs">
+			            <input class="sort-price__input" type="text" name="start-price" value="0">
+			            <input class="sort-price__input" type="text" name="end-price" value="30000">
+		            </div>
+		          <div class="filters__check-box">  
+								<h3 class="filters__title">Производители:</h3>
+								<ul class="filters__check-list">
+									<li class="filters__check-item">
+										<input class="filters__check" type="checkbox" name="bosch" value="bosch" id="bosch" checked>
+										<label class="filters__label" for="bosch">
+											<span class="filters__check-btn"></span>
+											<span class="filters__check-label">Bosch</span>
+									  </label>										
+									</li>
 
-					<form class="filters__form" action="#" method="post">
-						<h3 class="filters__title">Цена</h3>
-						<!--Форма будет тут-->
-						<h3 class="filters__title">Производители:</h3>
+									<li class="filters__check-item">
+										<input class="filters__check" type="checkbox" name="interscol" value="interscol" id="interscol">
+										<label class="filters__label" for="interscol">
+											<span class="filters__check-btn"></span>
+											<span class="filters__check-label">Интерскол</span>
+									  </label>										
+									</li>
 
-						<label class="filters__label" for="bosch">Bosch</label>
-						<input class="filters__check" type="checkbox" name="bosch" value="bosch" id="bosch" checked>
-						
-						<label class="filters__label" for="interscol">Интерскол</label>
-						<input class="filters__check" type="checkbox" name="interscol" value="interscol" id="interscol">
+									<li class="filters__check-item">
+										<input class="filters__check" type="checkbox" name="makita" value="makita" id="makita" checked>
+										<label class="filters__label" for="makita">
+											<span class="filters__check-btn"></span>
+											<span class="filters__check-label">Makita</span>
+									  </label>										
+									</li>
 
-						<label class="filters__label" for="makita">Makita</label>
-						<input class="filters__check" type="checkbox" name="makita" value="makita" id="makita" checked>
+									<li class="filters__check-item">
+										<input class="filters__check" type="checkbox" name="dewalt" value="dewalt" id="dewalt" disabled>
+										<label class="filters__label" for="dewalt">
+											<span class="filters__check-btn"></span>
+											<span class="filters__check-label">Dewalt</span>
+									  </label>										
+									</li>
 
-						<label class="filters__label" for="dewalt">Dewalt</label>
-						<input class="filters__check" type="checkbox" name="dewalt" value="dewalt" id="dewalt">
+									<li class="filters__check-item">
+										<input class="filters__check" type="checkbox" name="hitachi" value="hitachi" id="hitachi">
+										<label class="filters__label" for="hitachi">
+											<span class="filters__check-btn"></span>
+											<span class="filters__check-label">hitachi</span>
+									  </label>										
+									</li>
+								</ul>								
+							</div>
+							<div class="filters__radio-box">
+								<h3 class="filters__title filters__title_energy">Питание:</h3>
+								<ul class="filters__radio-list">
+									<li class="filters__radio-item">
+										<input class="filters__radio" type="radio" name="energy" value="acum" id="acum" checked>
+										<label class="filters__label" for="acum">
+											<span class="filters__radio-btn"></span>
+											<span class="filters__radio-label filters__radio-label_acum">Аккумуляторные</span>											
+										</label>
+									</li>
 
-						<label class="filters__label" for="hitachi">hitachi</label>
-						<input class="filters__check" type="checkbox" name="hitachi" value="hitachi" id="hitachi">
+									<li class="filters__radio-item">
+										<input class="filters__radio" type="radio" name="energy" value="cable" id="cable">
+										<label class="filters__label" for="cable">
+											<span class="filters__radio-btn"></span>
+											<span class="filters__radio-label">Сетевые</span>
+										</label>
+									</li>
+								</ul>								
+							</div>	
+							<button class="filters__btn" type="submit">Показать</button>
+						</form>
+					</section>			
 
-						<h3 class="filters__title">Питание:</h3>
-
-						<label class="filters__label" for="acum">Аккумуляторные</label>
-						<input class="filters__radio" type="radio" name="energy" value="acum" id="acum" checked>
-
-						<label class="filters__label" for="cable">Сетевые</label>
-						<input class="filters__radio" type="radio" name="energy" value="cable" id="cable">
-
-						<button class="filters__btn" type="submit">Показать</button>
-					</form>
-				</section>			
 
 				<section class="catalog-perf">
 					<h2 class="hidd-title">Каталог</h2>			
