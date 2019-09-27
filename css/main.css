@@ -614,17 +614,19 @@ a {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  margin-top: 21px;
+  margin-top: 22px;
   color: #000;
   list-style: none;
 }
 
 .good {
   position: relative;
-  display: inline-block;
-  vertical-align: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   width: 220px;
+  min-height: 318px;
   margin-right: 20px;
   margin-bottom: 20px;
   padding-bottom: 13px;
@@ -637,7 +639,7 @@ a {
   border: 1px solid #eaeaea;  
 }
 
-.good:nth-child(4n) {
+.popular-good:nth-child(4n) {
   margin-right: 0;
 }
 
@@ -659,8 +661,7 @@ a {
 .good__title {
   display: block;
   margin: 0;  
-  margin-top: 5px;
-  margin-bottom: 12px;
+  margin-top: 5px;  
   padding: 0 20px;
 
   color: #000000;  
@@ -669,7 +670,7 @@ a {
 }
 
 .good__price {
-  margin: 0;
+  margin: 0;  
   font-size: 17px;
   line-height: 18px;
   text-transform: uppercase;
@@ -709,10 +710,6 @@ a {
   
   border: 19px solid white;
   border-left-color: #ee3643;
-}
-
-.new .good__newprice {
-  margin-top: 39px;
 }
 
 .good:hover {
@@ -1757,12 +1754,62 @@ a {
 }
 
 .catalog-perf__list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
+  margin-left: 20px;
+  margin-top: 20px;
   padding: 0;
   list-style: none;
 }
 
 .good-perf {
   margin: 0;
-  width: 218px;
+  margin-right: 20px;
+  margin-bottom: 20px;  
+}
+
+.good-perf:nth-child(3n) {
+  margin-right: 0;
+}
+
+.catalog-pag {
+  display: flex;
+  margin: 0;
+  margin-left: 20px;
+  margin-top: 32px;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog-pag__item {
+  margin-right: 10px;
+}
+
+.catalog-pag__btn {
+  padding: 9px 14.5px;
+  font-family: "PT Sans";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
+}
+
+.catalog-pag__btn_next {
+  text-transform: uppercase;
+  padding: 9px 31px;
+}
+
+.catalog-pag__btn.active {
+  color: #fff;
+  background-color: #ee3643;
+}
+
+.catalog-pag__btn:hover {
+  border: 1px solid #bdc6ca;
+}
+
+.catalog-pag__btn:active {
+  border: 1px solid #ee3643;
 }
