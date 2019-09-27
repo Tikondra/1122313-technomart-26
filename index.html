@@ -65,7 +65,7 @@
 
 				<div class="page-header__mid">
 					<p class="page-header__title">
-						Интернет-магазин строительных материалов <br>и инструментов для ремонта
+						Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта
 					</p>
 				
 					<p class="page-header__text">
@@ -464,7 +464,7 @@
 				
 				<p class="page-footer__text">
 					г. Санкт-Петербург, ул. Б.Конюшенная, д 19/8<br>
-					+7 (812) 555-05-55
+					<a href="tel:+78125550555">+7 (812) 555-05-55
 				</p>
 				</div>
 			</div>
@@ -506,21 +506,31 @@
 			</div>
 		</footer>
 
-		<div class="modal-send" hidden>
+		<div class="modal-send">
 			<form class="send-form" action="#" method="post">
-				<button class="close-btn" type="button">Закрыть</button>
-
-				<label class="send-form__label" for="name">Ваше имя:</label>
-				<input class="send-form__input" type="text" name="name" id="name" placeholder="Имя Фамилия">
-
-				<label class="send-form__label" for="email">Ваш e-mail:</label>
-				<input class="send-form__input" type="text" name="email" id="email" placeholder="email@example.com">
-
-				<label class="send-form__label" for="text">Текст письма:</label>
-				<textarea class="send-form__input" id="text" placeholder="В свободной форме"></textarea>
-
-				<button class="send-form__btn" type="submit">Отправить</button>
+				<button class="close-btn" type="button"aria-label="Закрыть"></button>
+				<div class="modal-send__container">
+					<div class="modal-send__item">
+						<label class="send-form__label" for="name">Ваше имя:</label>
+						<input class="send-form__input" type="text" name="name" id="name" placeholder="Имя Фамилия">
+					</div>								
+					
+					<div class="modal-send__item">
+						<label class="send-form__label" for="email">Ваш e-mail:</label>
+						<input class="send-form__input" type="text" name="email" id="email" placeholder="email@example.com">
+					</div>				
+					
+					<div class="modal-send__item">
+						<label class="send-form__label" for="text">Текст письма:</label>
+						<textarea class="send-form__area" id="text" placeholder="В свободной форме"></textarea>
+					</div>				
+				</div>
+				<div class="send-form__btn-box">
+					<button class="send-form__btn" type="submit">Отправить</button>
+				</div>
+				
 			</form>
 		</div>
+		<script src="js/script.js"></script>
 	</body>
 </html>
