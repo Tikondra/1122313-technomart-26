@@ -1026,7 +1026,8 @@ a {
 
 .info {
   display: flex;
-  margin-top: 54px;  
+  margin-top: 54px;
+  margin-bottom: 85px;
 }
 
 .company-info {
@@ -1146,8 +1147,7 @@ a {
 /*==========  FOOTER-TOP  ==========*/
 
 .footer-top {
-  display: flex;
-  margin-top: 85px;
+  display: flex;  
   padding-bottom: 50px;
   background-color: #32425c;
 }
@@ -1282,6 +1282,10 @@ a {
 
 .footer-info__link {
   color: #ffd180;
+}
+
+.footer-info__link:active {
+  color: #ee3643;
 }
 
 /*==========  HEADER_USER-MENU  ==========*/
@@ -1778,6 +1782,7 @@ a {
   margin: 0;
   margin-left: 20px;
   margin-top: 32px;
+  margin-bottom: 60px;
   padding: 0;
   list-style: none;
 }
@@ -1812,4 +1817,28 @@ a {
 
 .catalog-pag__btn:active {
   border: 1px solid #ee3643;
+}
+
+.perf-info {
+  padding: 40px 0 56px;
+  color: #000000;
+  background-color: #f2f6f8;
+}
+
+.perf-info__title {  
+  font-family: Cuprum;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.17px;
+}
+
+.perf-info__text {
+  width: 945px;
+  font-family: "PT Sans";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.25px;
 }
