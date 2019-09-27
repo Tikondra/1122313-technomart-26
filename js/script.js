@@ -22,4 +22,30 @@ function feedback() {
     });
 };
 
+function basket() {
+
+    var popupBasket = document.querySelector('.modal-basket');
+    var openPopupButton = document.querySelector('.good__btn_buy');
+    var closePopupButton = popupBasket.querySelector('.close-btn_basket');    
+
+    openPopupButton.addEventListener('click', function (evt) {
+
+        evt.preventDefault();
+        popupBasket.classList.add('modal-basket_show');        
+    });
+
+    closePopupButton.addEventListener('click', function () {
+        popupBasket.classList.remove('modal-basket_show');        
+    });
+
+    document.addEventListener('keydown', function (evt) {
+
+        if (evt.keyCode === 27) {
+            popupBasket.classList.remove('modal-basket_show');            
+        }
+    });
+};
+
+
+
 feedback();

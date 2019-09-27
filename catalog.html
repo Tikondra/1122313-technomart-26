@@ -46,9 +46,9 @@
 						</li>
 
 						<li class="header-tools__item">
-							<a class="header-tools__link header-tools__link_basket" href="#">
+							<a class="header-tools__link header-tools__link_basket active" href="#">
 								<svg class="header-tools__svg header-tools__svg_basket" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
-								<span class="header-tools__span">Корзина: 0</span>
+								<span class="header-tools__span">Корзина: 10</span>
 							</a>
 						</li>
 
@@ -519,11 +519,16 @@
 			</div>
 		</footer>
 
-		<div class="modal-basket" hidden>
-			<button class="close-btn" type="button">Закрыть</button>
-			<p class="modal-basket__text">Товар добавлен в корзину</p>
-			<a class="modal-basket__link" href="#">Оформить заказ</a>
-			<button class="modal-basket__btn" type="button">Продолжить покупки</button>
+		<div class="modal-basket">
+			<div class="modal-basket__text-box">
+				<button class="close-btn_basket" type="button" aria-label="закрыть"></button>
+				<p class="modal-basket__text">Товар добавлен в корзину</p>
+			</div>
+			<div class="modal-basket__btn-box">
+				<a class="modal-basket__link" href="#">Оформить заказ</a>
+				<button class="modal-basket__btn" type="button">Продолжить покупки</button>
+			</div>
 		</div>
+		<script src="js/script.js"></script>
 	</body>
 </html>
