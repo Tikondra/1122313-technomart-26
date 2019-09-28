@@ -219,8 +219,8 @@ a {
 .page-header__title {
   margin-top: 9px;
   margin-left: 52px;
-  margin-right: 72px;
-  width: 196px;    
+  margin-right: 68px;
+  width: 200px;    
   font-size: 16px;
   font-style: italic;
   line-height: 23px;
@@ -1122,7 +1122,7 @@ a {
 }
 
 .company-info {
-  width: 665px;
+  /*width: 665px;*/  /*ИЕ против*/
   margin-right: 120px;
   color: #000000;
   font-family: "PT Sans";
