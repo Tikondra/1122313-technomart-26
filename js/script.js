@@ -25,16 +25,22 @@ function feedback() {
 function basket() {
 
     var popupBasket = document.querySelector('.modal-basket');
-    var openPopupButton = document.querySelector('.good__btn_buy');
-    var closePopupButton = popupBasket.querySelector('.close-btn_basket');    
+    var openPopupButton = document.querySelectorAll('.good__btn_buy');
+    var closePopupButton = popupBasket.querySelector('.close-btn_basket');
+    var closePopupButton2 = popupBasket.querySelector('.modal-basket__btn');
 
-    openPopupButton.addEventListener('click', function (evt) {
+    for (var i = 0; i < openPopupButton.length; i++) {
 
-        evt.preventDefault();
-        popupBasket.classList.add('modal-basket_show');        
-    });
+        openPopupButton[i].addEventListener('click', function () {
+        popupBasket.classList.add('modal-basket_show');
+        });
+    }
 
     closePopupButton.addEventListener('click', function () {
+        popupBasket.classList.remove('modal-basket_show');        
+    });
+
+    closePopupButton2.addEventListener('click', function () {
         popupBasket.classList.remove('modal-basket_show');        
     });
 
@@ -46,6 +52,39 @@ function basket() {
     });
 };
 
+function popapMap() {
+
+    var popupMap = document.querySelector('.modal-map');
+    var openPopupButton = document.querySelector('.contacts__img');
+    var closePopupButton = popupMap.querySelector('.close-btn');    
+
+    openPopupButton.addEventListener('click', function (evt) {
+
+        evt.preventDefault();
+        popupMap.classList.add('modal-map_show');        
+    });
+
+    closePopupButton.addEventListener('click', function () {
+        popupMap.classList.remove('modal-map_show');        
+    });
+
+    document.addEventListener('keydown', function (evt) {
+
+        if (evt.keyCode === 27) {
+            popupMap.classList.remove('modal-map_show');            
+        }
+    });
+}
 
 
-feedback();
+
+if(window.location.toString().indexOf('index.html')>0) {
+
+    feedback();
+    popapMap();
+
+} else {
+
+    basket();
+
+};
