@@ -7,7 +7,8 @@ function feedback() {
     openPopupButton.addEventListener('click', function (evt) {
 
         evt.preventDefault();
-        popupFeedback.classList.add('modal-send__show');        
+        popupFeedback.classList.add('modal-send__show');
+        popupFeedback.classList.add('anim');        
     });
 
     closePopupButton.addEventListener('click', function () {
@@ -33,6 +34,7 @@ function basket() {
 
         openPopupButton[i].addEventListener('click', function () {
         popupBasket.classList.add('modal-basket_show');
+        popupBasket.classList.add('anim');
         });
     }
 
@@ -61,7 +63,8 @@ function popapMap() {
     openPopupButton.addEventListener('click', function (evt) {
 
         evt.preventDefault();
-        popupMap.classList.add('modal-map_show');        
+        popupMap.classList.add('modal-map_show');
+        popupMap.classList.add('anim');        
     });
 
     closePopupButton.addEventListener('click', function () {
@@ -78,13 +81,13 @@ function popapMap() {
 
 
 
-if(window.location.toString().indexOf('index.html')>0) {
+if(window.location.toString().indexOf('catalog.html')>0) {
 
-    feedback();
-    popapMap();
+    basket();    
 
 } else {
 
-    basket();
+    feedback();
+    popapMap();
 
 };
