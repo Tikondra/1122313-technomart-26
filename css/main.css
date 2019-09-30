@@ -39,11 +39,11 @@ a {
 
 .page-header {
   background-color: #f3f7f8;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid;  
 }
 
 .page-header__top_back {
-  background-color: #293449;  
+  background-color: #293449;
 }
 
 .page-header__top {
@@ -791,7 +791,7 @@ a {
   margin-bottom: 7px;
   padding: 10px 0;
   
-  font-family: Cuprum, sans-serif;
+  font-family: Cuprum, "Tahoma", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -958,7 +958,7 @@ a {
 .service__text {
   width: 420px;
   margin-top: 25px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -1002,7 +1002,7 @@ a {
   padding: 15px 22px 16px;
   text-align: left;
   color: #fff;
-  font-family: Cuprum;
+  font-family: Cuprum, "Tahoma", sans-serif;
   font-size: 21px;
   font-weight: 700;
   line-height: 30px;
@@ -1047,7 +1047,7 @@ a {
   margin: 0;
   margin-top: -3px;
   color: #32425c;
-  font-family: Cuprum;
+  font-family: Cuprum, "Tahoma", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
@@ -1059,7 +1059,7 @@ a {
   margin-top: 25px;
   width: 280px;
   color: #000000;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
@@ -1104,7 +1104,7 @@ a {
   padding: 10px 0;
   margin-top: 15px;
   text-align: center;
-  font-family: Cuprum;
+  font-family: Cuprum, "Tahoma", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -1126,13 +1126,13 @@ a {
   /*width: 665px;*/  /*ИЕ против*/
   margin-right: 120px;
   color: #000000;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 13px;
   font-weight: 400;
 }
 
 .company-info__title {
-  font-family: Cuprum;
+  font-family: Cuprum, "Tahoma", sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
@@ -1142,7 +1142,7 @@ a {
 .company-info__text {
   width: 520px;
   margin-bottom: 25px;
-  font-family: "PT Sans";  
+  font-family: "PT Sans", "Tahoma", sans-serif;  
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.18px;  
@@ -1164,7 +1164,7 @@ a {
   margin: 0;
   margin-bottom: 21px;
   padding-left: 36px;
-  font-family: Cuprum;
+  font-family: Cuprum, "Tahoma", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 20px;
@@ -1187,7 +1187,7 @@ a {
   width: 220px;
   padding: 11px 0 10px;
   text-align: center;
-  font-family: Cuprum;
+  font-family: Cuprum, "Tahoma", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -1201,7 +1201,7 @@ a {
 .contacts__title {
   margin-bottom: 26px;
   color: #000;
-  font-family: Cuprum;
+  font-family: Cuprum, "Tahoma", sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
@@ -1213,7 +1213,7 @@ a {
   margin-bottom: 31px;
   width: 180px;
   color: #000000;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
@@ -1226,7 +1226,7 @@ a {
   margin-top: 37px;
   padding: 10px 0 10px;
   text-align: center;
-  font-family: Cuprum;
+  font-family: Cuprum, "Tahoma", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -1238,10 +1238,7 @@ a {
 
 /*==========  FOOTER-TOP  ==========*/
 
-.footer-top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;  
+.footer-top {    
   padding-bottom: 50px;
   background-color: #32425c;
 }
@@ -1260,10 +1257,10 @@ a {
           justify-content: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0;
-  margin-top: 32px;
-  margin-left: 10px;
+  margin: 0;  
+  margin-left: 10px;  
   padding: 0;
+  padding-top: 32px;
   list-style: none;
 }
 
@@ -1272,7 +1269,7 @@ a {
   padding: 5px 15px;
   margin-bottom: 10px;   
   color: #f1f5f7;
-  font-family: Cuprum;
+  font-family: Cuprum, "Tahoma", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -1299,6 +1296,7 @@ a {
 .footer-menu__list_2 {  
   margin-top: 14px;
   margin-left: 10px;
+  padding-top: 0;
 }
 
 .footer-menu__item_2:nth-child(4) .footer-menu__link_2 {  
@@ -1319,7 +1317,7 @@ a {
   margin-top: -39px;
   margin-left: 3px;
   color: #f3f7f9;
-  font-family: Cuprum;
+  font-family: Cuprum, "Tahoma", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;  
@@ -1351,7 +1349,7 @@ a {
   margin-top: 35px;
   margin-bottom: 30px;
   margin-right: 160px;
-  font-family: Cuprum;
+  font-family: Cuprum, "Tahoma", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;  
@@ -1397,7 +1395,7 @@ a {
   width: 137px;
   margin: 0;
   margin-top: 36px;
-  font-family: Cuprum;
+  font-family: Cuprum, "Tahoma", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -1440,7 +1438,7 @@ a {
   width: 255px;
   padding: 11px 0 13px 13px;
   color: #000000;
-  font-family: Cuprum;
+  font-family: Cuprum, "Tahoma", sans-serif;
   font-size: 21px;
   font-weight: 400;
   line-height: 21px;  
@@ -1476,7 +1474,7 @@ a {
   margin-top: 1px;
 
   color: #32425c;
-  font-family: Cuprum;
+  font-family: Cuprum, "Tahoma", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -1512,7 +1510,7 @@ a {
   padding-right: 21px;
   margin-right: 13px;
   color: #000000;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -1571,7 +1569,7 @@ a {
   margin-top: 14px;
   padding: 31px 28px 29px;
   color: #32425c;
-  font-family: Cuprum;
+  font-family: Cuprum, "Tahoma", sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
@@ -1593,7 +1591,7 @@ a {
   margin-bottom: 11px;
   padding: 10px 18px;
   color: #000000;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -1616,7 +1614,7 @@ a {
 
 .filters__title {
   margin: 0;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 17px;
   font-weight: 700;
   line-height: 30px;
@@ -1704,7 +1702,7 @@ a {
   width: 95px;
   padding: 8px 5px 12px;
   color: #000000;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 17px;
   font-weight: 400;
   line-height: 18px;
@@ -1736,7 +1734,7 @@ a {
   margin: 0;
   margin-top: 13px;
   padding: 0;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 15px;  
   line-height: 20px;
   text-transform: uppercase;
@@ -1816,7 +1814,7 @@ a {
   width: 140px;  
   padding: 10px 0 8px;
   color: #000000;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -1846,7 +1844,7 @@ a {
   margin: 0;
   margin-right: auto;
   color: #000000;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -1856,7 +1854,7 @@ a {
 
 .catalog-perf__sort-btn {  
   color: #000000;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -1955,7 +1953,7 @@ a {
 
 .catalog-pag__btn {
   padding: 9px 14.5px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -1988,7 +1986,7 @@ a {
 }
 
 .perf-info__title {  
-  font-family: Cuprum;
+  font-family: Cuprum, "Tahoma", sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
@@ -1998,7 +1996,7 @@ a {
 
 .perf-info__text {
   width: 945px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
@@ -2027,7 +2025,7 @@ a {
 .send-form__input::-webkit-input-placeholder,
 .send-form__area::-webkit-input-placeholder {
   color: #a9a9a9;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -2036,7 +2034,7 @@ a {
 .send-form__input::-moz-placeholder,
 .send-form__area::-moz-placeholder {
   color: #a9a9a9;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -2045,7 +2043,7 @@ a {
 .send-form__input:-ms-input-placeholder,
 .send-form__area:-ms-input-placeholder {
   color: #a9a9a9;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -2054,7 +2052,7 @@ a {
 .send-form__input::-ms-input-placeholder,
 .send-form__area::-ms-input-placeholder {
   color: #a9a9a9;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -2063,7 +2061,7 @@ a {
 .send-form__input::placeholder,
 .send-form__area::placeholder {
   color: #a9a9a9;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Tahoma", sans-serif
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -2085,7 +2083,7 @@ a {
   width: 460px;
   padding: 10px;
   color: #ffffff;
-  font-family: Cuprum;
+  font-family: Cuprum, "Tahoma", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -2125,7 +2123,7 @@ a {
 .send-form__label {
   display: block;
   margin: 10px 0;
-  font-family: Cuprum;
+  font-family: Cuprum, "Tahoma", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 18px;
@@ -2198,7 +2196,7 @@ a {
 .modal-basket__text {   
   padding-left: 20px;
   color: #000000;
-  font-family: Cuprum;
+  font-family: Cuprum, "Tahoma", sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
@@ -2225,7 +2223,7 @@ a {
   vertical-align: middle;
   width: 220px;
   padding: 10px 5px;
-  font-family: Cuprum;
+  font-family: Cuprum, "Tahoma", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
