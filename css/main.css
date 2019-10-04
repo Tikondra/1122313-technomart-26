@@ -2009,12 +2009,29 @@ img {
   letter-spacing: 0.25px;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  display: none;
+  height: 100%;
+  width: 100%;
+
+  background: transparent;
+}
+
+.overlay__show {
+  display: block;
+}
+
 .modal-send {
   position: fixed; 
   display: none; 
   top: 50%;
   left: 50%;
-  z-index: 1;
+  z-index: 11;
   width: 620px;  
   margin-left: -310px;
   margin-top: -215px;
@@ -2026,6 +2043,8 @@ img {
 
 .modal-send__show {
   display: block;
+  animation-name: popup-size;
+  animation-duration: 1s;
 }
 
 .send-form__input::-webkit-input-placeholder,
@@ -2145,8 +2164,6 @@ img {
   min-height: 114px;
 }
 
-
-
 .modal-basket  {
   position: fixed; 
   display: none;
@@ -2174,6 +2191,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  animation-name: popup-size;
+  animation-duration: 1s;
 }
 
 .modal-basket__text-box {
@@ -2262,15 +2281,12 @@ img {
 
 .modal-map_show {
   display: block;
+  animation-name: popup-size;
+  animation-duration: 1s;
 }
 
 .contacts__img {
   cursor: pointer;
-}
-
-.anim {
-  animation-name: popup-size;
-  animation-duration: 1s;
 }
 
 @keyframes popup-size {
@@ -2293,5 +2309,32 @@ img {
   }
   100% {
       transform: none;
+  }
+}
+
+.err {
+  animation-name: trem;
+  animation-duration: 0.3s;
+}
+
+@keyframes trem {
+  0% {
+    transform: translateX(2px);
+  }
+
+  25% {
+    transform: translateX(-2px);
+  }
+
+  50% {
+    transform: translateX(2px);
+  }
+
+  75% {
+    transform: translateX(-2px);
+  }
+
+  100% {
+    transform: translateX(2px);
   }
 }
