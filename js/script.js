@@ -139,7 +139,7 @@ if(window.location.toString().indexOf('catalog.html')>0) {
   basket();    
 
 } else {
-
+  basket();
   feedback();
   popapMap();
 

@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>HTML Academy: Техномарт</title>
 		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/main.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">    
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -506,7 +506,7 @@
 				</div>							   
 			</div>
 		</footer>
-			<div class="overlay"></div>
+		<div class="overlay"></div>
 		<div class="modal-send">
 			<form class="send-form" action="https://echo.htmlacademy.ru" method="post">
 				<button class="close-btn" type="button" aria-label="Закрыть"></button>
@@ -522,7 +522,7 @@
 					</div>				
 					
 					<div class="modal-send__item">
-						<label class="send-form__label" for="text">Текст письма:</label>
+						<label class="send-form__label send-form__label_area" for="text">Текст письма:</label>
 						<textarea class="send-form__area send-form__input" id="text" placeholder="В свободной форме"></textarea>
 					</div>				
 				</div>
@@ -532,11 +532,20 @@
 				
 			</form>
 		</div>
-
+		<div class="modal-basket">
+			<div class="modal-basket__text-box">
+				<button class="close-btn_basket" type="button" aria-label="закрыть"></button>
+				<p class="modal-basket__text">Товар добавлен в корзину!</p>
+			</div>
+			<div class="modal-basket__btn-box">
+				<a class="modal-basket__link" href="#">Оформить заказ</a>
+				<button class="modal-basket__btn" type="button">Продолжить покупки</button>
+			</div>
+		</div>
 		<div class="modal-map">
 			<button class="close-btn" type="button" aria-label="Закрыть"></button>
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1223.2046198259245!2d30.323687427513384!3d59.938564540504665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1569660936502!5m2!1sru!2sru" width="940" height="447"  allowfullscreen=""></iframe>
 		</div>
-		<script src="js/script.js"></script>
+		<script src="js/script.min.js"></script>
 	</body>
 </html>
