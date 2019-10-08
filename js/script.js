@@ -20,7 +20,7 @@ function feedback() {
     evt.preventDefault();
     popupFeedback.classList.remove('modal-send__show');
     overlay.classList.remove('overlay__show');
-    popupFeedback.classList.remove('err');        
+    popupFeedback.classList.remove('error');        
   });
 
   document.addEventListener('keydown', function (evt) {
@@ -28,14 +28,14 @@ function feedback() {
     if (evt.keyCode === 27) {
       popupFeedback.classList.remove('modal-send__show');
       overlay.classList.remove('overlay__show');
-      popupFeedback.classList.remove('err');
+      popupFeedback.classList.remove('error');
     }
   });
 
   overlay.addEventListener('click', function() {
     popupFeedback.classList.remove('modal-send__show');
     overlay.classList.remove('overlay__show');
-    popupFeedback.classList.remove('err');
+    popupFeedback.classList.remove('error');
   });
 
   form.addEventListener("submit", function (evt) {
@@ -46,9 +46,9 @@ function feedback() {
       if (input.value == '') {
 
         evt.preventDefault();
-        popupFeedback.classList.remove('err');
+        popupFeedback.classList.remove('error');
         popupFeedback.offsetWidth = popupFeedback.offsetWidth;
-        popupFeedback.classList.add('err');
+        popupFeedback.classList.add('error');
       }
     }
   });

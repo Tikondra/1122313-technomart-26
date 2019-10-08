@@ -196,7 +196,7 @@ img {
 .header-tools__item:active .header-tools__link,
 .header-tools__item:active {
   background-color: #161d29;
-  color: rgb(100%, 100%, 100%, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .header-tools__item_checkout:hover {
@@ -206,7 +206,7 @@ img {
 .header-tools__item_checkout:active .header-tools__link_checkout,
 .header-tools__item_checkout:active {
   background-color: #518534;
-  color: rgb(100%, 100%, 100%, 0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 /*==========  HEADER-MID  ==========*/
@@ -254,7 +254,7 @@ img {
   text-decoration: none;
 }
 
-.page-header__adress {
+.page-header__address {
   display: block;
   margin-top: 16px;
   padding-left: 10px;
@@ -684,7 +684,7 @@ img {
   margin-bottom: 20px;
   padding-bottom: 13px;
 
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Tahoma", sans-serif;
   line-height: 20px;
   font-weight: 700;
   text-align: center;
@@ -998,7 +998,7 @@ img {
   background-image: url(../img/shadow.svg);
 }
 
-.serice__input {
+.service__input {
   display: none;
 }
 
@@ -1022,7 +1022,7 @@ img {
   background-color: #293449;
 }
 
-.garant,
+.warranty,
 .credit {
   display: none;
 }
@@ -1041,7 +1041,7 @@ img {
   display: none;
 }
 
-#service__slide2:checked ~ .garant {
+#service__slide2:checked ~ .warranty {
   display: block;
 }
 
@@ -1084,12 +1084,12 @@ img {
   background-position: 150px 22px;  
 }
 
-.garant {
+.warranty {
   background-image: url(../img/garant.png);
   background-position: right top;
 }
 
-.garant .service__slide_text {
+.warranty .service__slide_text {
   width: 380px;
   margin-bottom: 0;
 }
@@ -1414,6 +1414,11 @@ img {
 
 .footer-info__link {
   color: #ffd180;
+  text-decoration: none;
+}
+
+.footer-info__link:hover {
+  text-decoration: underline;
 }
 
 .footer-info__link:active {
@@ -2317,7 +2322,7 @@ img {
   }
 }
 
-.err {
+.error {
   animation-name: trem;
   animation-duration: 0.3s;
 }
